@@ -533,3 +533,148 @@
 //	}
 //	return 0;
 //}
+
+//
+//void my_strcat(char a[], char b[])
+//{
+//	int sz;
+//	int i = 0;
+//	sz = strlen(a);
+//	for (i = 0; b[i] != '\0'; i++)
+//	{
+//		a[sz] = b[i];
+//		sz++;
+//	}
+//	a[sz] = '\0';
+//	printf("%s", a);
+//
+//}
+//
+//int main()
+//{
+//	char a[20];
+//	char b[20];
+//	scanf("%s%s", a, b);
+//	my_strcat(a, b);
+//	return 0;
+//}
+//
+//void my_strcpy(char a[], char b[])
+//{
+//	int i = 0;
+//	for (i = 0; b[i] != '\0'; i++)
+//	{
+//		a[i] = b[i];
+//	}
+//	a[i] = '\0';
+//	printf("%s", a);
+//}
+//
+//int main()
+//{
+//	char a[80];
+//	char b[40];
+//	gets_s(a);
+//	gets_s(b);
+//	my_strcpy(a, b);
+//	return 0;
+//}
+
+
+//int main()
+//{
+//	char a[100];
+//	int i = 0;
+//	int sz;
+//	gets_s(a);
+//	sz = strlen(a);
+//	for (i = 0; i < sz; i++)
+//	{
+//		if (a[i] >= 'A'&&a[i] <= 'Z')
+//		{
+//			a[i] = 'Z' - (a[i]-'A');
+//		}
+//		else if (a[i] >= 'a'&&a[i] <= 'z')
+//		{
+//			a[i] = 'z' - (a[i] - 'a');
+//		}
+//	}
+//	printf("%s\n", a);
+//	for (i = 0; i < sz; i++)
+//	{
+//		if (a[i] >= 'A'&&a[i] <= 'Z')
+//		{
+//			a[i] = 'Z' - (a[i] - 'A');
+//		}
+//		else if (a[i] >= 'a'&&a[i] <= 'z')
+//		{
+//			a[i] = 'z' - (a[i] - 'a');
+//		}
+//		
+//	}
+//	printf("%s\n", a);
+//	return 0;
+//}
+
+//int main()
+//{
+//	int a[3][3] = {1,2,3,4,5,6,7,8,9};
+//	int i, j;
+//	int t;
+//	for (i = 0; i < 3; i++)
+//	{
+//		for (j = 0; j < 3; j++)
+//		{
+//			printf("%d ", a[i][j]);
+//		}
+//		printf("\n");
+//     }
+//	for (i = 0; i < 3; i++)
+//	{
+//		for (j = i; j <3; j++)
+//		{
+//			t=a[i][j];
+//			a[i][j] = a[j][i];
+//			a[j][i] = t;
+//		}		
+//	}
+//	for (i = 0; i < 3; i++)
+//	{
+//		for (j = 0; j < 3; j++)
+//		{
+//			printf("%d ", a[i][j]);
+//		}
+//		printf("\n");
+//	}
+//
+//	return 0;
+//}
+
+//int main()
+//{
+//	int n = 0;
+//	scanf("%d", &n);
+//	int i = 0;
+//	int a, b, c, d;
+//	a = n % 10;
+//	n /= 10;
+//	b = n % 10;
+//	n /= 10;
+//	c = n % 10;
+//	n /= 10;
+//	d = n % 10;
+//	n /= 10;
+//	printf("%d %d %d %d\n", d, c, b, a);
+//	return 0;
+//}
+//
+
+
+int main()
+{
+	float c, f;
+	f = 64.0;
+	c = (f - 32)*(5.0 / 9);
+	printf("f=%f\nc=%f\n", f, c);
+	return 0;
+}
